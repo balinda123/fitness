@@ -1,0 +1,188 @@
+body {
+    font-family: "Microsoft Yahei",Helvetica,Tahoma,"SimSun",sans-serif;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px;
+}
+
+
+.navbar-inner .item-group {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    text-align: center;
+    padding: 0 30px;
+    color: #d7d7d7;
+    font-size: 14px;
+}
+.navbar-inner .item-group span a{
+	margin-left: 8px;
+	margin-right: 8px;
+	color:#d7d7d7;
+}
+.carousel{
+	position: relative;
+}
+.carousel.item{
+	height: 550px;
+}
+.carousel img {
+      min-width: 100%;
+      height: 550px;
+    }
+.carousel-caption h5{
+	color: white;
+	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+.container li{
+	position: relative;
+}
+.container li .mask{
+	position: absolute;
+    bottom: 100px;
+    left: 10px;
+    height: 40px;
+    width: 100%;
+    color: white;
+}
+.img-list li {
+	list-style: none;
+	float: left;
+}
+#hot-list,#good-list{
+	padding-top: 5px;
+	padding-left: 2px;
+}
+#hot-list a,#good-list a{
+	color: #000000;
+	border: solid 1px gainsboro;
+}
+.hot,.good{
+	border-left:3px indianred solid ;
+	padding-left: 10px;
+	font-size:22px;
+}
+.one{
+	border-bottom: 1px gainsboro solid;
+	border-top: 1px gainsboro solid;
+	background:#FAFAD2;
+	margin: 0 auto;
+    width: 90%;
+    border-radius: 1%;
+    margin-bottom: 10px;
+}
+.row-fluid #class{
+	padding-left: 10px;
+	border-left:3px indianred solid ;
+	font-size:22px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+.row-fluid .women{
+	border-right: 2px solid lavender
+}
+.more{
+	float: right;
+	
+}
+.more a{
+	color: #292B2C;
+}
+.two{
+	border-bottom: 1px gainsboro solid;
+	border-top: 1px gainsboro solid;
+	margin: 0 auto;
+    width: 90%;
+    border-radius: 1%;
+}
+#food td{
+	text-align: center;
+}
+#food td a{
+	width: 191px;
+	text-align: center;
+	color: #464A4C;
+}
+#food td p{
+	margin-top: 70px;
+	font-weight: bolder;
+}
+.food1{
+	display: inline;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.knowe{
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+#m,#m1{
+position: relative;	
+width: 530px;
+height: 300px;
+padding-bottom: 20px;
+padding-top: 5px;
+margin: 0 auto;
+}
+#m p,#m1 p{
+	position: absolute;
+	bottom: 15px;
+	left: 5px;
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	display: none;
+}
+#m:hover img,#m1:hover img
+{
+filter:alpha(Opacity=70);
+-moz-opacity:0.7;
+opacity: 0.7;
+} 
+.foot{
+	width: 100%;
+	height: 300px;
+	background: gainsboro;
+	position: relative;
+}
+.box{
+	width: 1250px;
+    margin: 0 auto;
+}
+.box .training-section {
+    float: left;
+    width: 250px;
+    padding: 20px 0 12px 50px;
+}
+.box .training-section h2{
+	color: #292B2C;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box .training-section ul{
+	border-right: 1px solid #484950;
+    padding-top: 16px;
+    margin-top: -2px;
+    margin-left: 0px;
+    list-style: none;
+}
+.box .training-section ul li a{
+	font-size: 12px;
+    line-height: 24px;
+    color: #292B2C;
+}
+.foot .bottom{
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left:540px;
+}

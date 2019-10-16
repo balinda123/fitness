@@ -1,0 +1,174 @@
+body {
+    font-family: "Microsoft Yahei",Helvetica,Tahoma,"SimSun",sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.navbar-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px;
+}
+.navbar-inner .item-group {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    text-align: center;
+    padding: 0 30px;
+    color: #d7d7d7;
+    font-size: 14px;
+}
+.navbar-inner .item-group  span a{
+	color:#d7d7d7;
+	margin-left: 8px;
+	margin-right: 8px;
+
+}
+.backPic{
+    background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: .5s all;
+    margin: 0px auto;
+    height: 400px;
+    position: relative;
+}
+.view_img{
+	position: absolute;
+    left: 0;
+    top: 0;
+    background: #000 url(../img/bg1.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .5;
+    mix-blend-mode: screen;
+}
+.backPic:hover {
+  background-position: 100% 100%;
+}
+.backPic .search{
+	position: absolute;
+	bottom: 30px;
+	z-index: 5;
+}
+
+.row-fluid #class{
+	margin-left: 30px;
+	border-left:3px indianred solid ;
+	font-size:22px;
+	font-weight: bold;
+}
+.food2{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#ofenFood ul li{
+	float: left;
+    width: 380px;
+    margin: 20px 20px 0 0;
+    border-bottom: 1px solid #eee;
+    list-style: none;
+    text-decoration: none;
+}
+#ofenFood ul li a{
+	display: block;
+	padding-bottom: 10px;
+	
+}
+#ofenFood .img-wrap{
+	width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #CCC;
+    overflow: hidden;
+}
+#ofenFood h3{
+	font-size: 14px;
+	height: 20px;
+    color: #3f73de;
+    margin: 0 0 6px 113px;
+    font-weight: bold;
+}
+#ofenFood p{
+	font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    margin-left: 113px;
+    height: 63px;
+    overflow: hidden;
+}
+#ofenFood .more{
+	font-size: 12px;
+    color: #3f73de;
+    margin-left: 13px;
+}
+#ofenFood li:hover,#restruant li:hover{
+filter:alpha(Opacity=70);
+-moz-opacity:0.7;
+opacity: 0.7;
+}
+#restruant .img-wrap{
+	width: 180px;
+    height: 100px;
+    float: left;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.row-fluid .span4{
+	float: right;
+	margin-left: 0px;
+}
+#restruant ul{
+	list-style: none;
+}
+#restruant h3{
+	font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-bottom: 17px;
+}
+#restruant p{
+	    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    margin-left: 200px;
+    height: 50px;
+    overflow: hidden;
+}
+#restruant .details{
+	font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    margin-left: 200px;
+    height: 50px;
+    overflow: hidden;
+}
+.foot{
+	width: 100%;
+	height: 100px;
+	background: gainsboro;
+	position: relative;
+}
+ .foot .bottom{
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left:540px;
+}

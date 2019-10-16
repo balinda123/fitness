@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/rice.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+var urlParam= window.location.search;
+var loc = urlParam.substring(urlParam.lastIndexOf('=')+1, urlParam.length);
+$.ajax({
+   url  : 'http://127.0.0.1:8020/bighomework/data/'+loc+'.txt',
+   type : "get",
+   data : {},
+   dataType : "json",
+   error : function() {},
+   success : function(data) {
+   $("#img11").attr("src","img/"+loc+"1.png");
+   $("#img12").attr("src","img/"+loc+"2.png");
+   $("#img13").attr("src","img/"+loc+"3.png");
+   $("#img14").attr("src","img/"+loc+"4.png");
+   $("#img15").attr("src","img/"+loc+"5.png");
+   $("#n1").html(data.n1);
+   $("#n2").html(data.n2);
+   $("#n3").html(data.n3);
+   $("#n4").html(data.n4);
+   $("#n5").html(data.n5);
+   $("#n6").html(data.n6);
+   $("#n7").html(data.n7);
+   $("#r1").html(data.r1);
+   $("#r2").html(data.r2);
+   $("#r3").html(data.r3);
+   $("#r4").html(data.r4);
+   $("#r5").html(data.r5);
+}
+});
+
+    })
+
+	</script>
+	</head>
+	<body>
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navbar navbar-inverse">
+					<div class="navbar-inner">
+						<a class="brand" href="index.html"><img src="img/fitness.png" width="30px" height="30px"></a>
+						<ul class="nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="#">健身视频</a>
+							</li>
+							<li class="active">
+								<a href="#">饮食查询</a>
+							</li>
+							<li>
+								<a href="#">健身工具</a>
+							</li>
+							<li>
+								<a href="#">训练计划</a>
+							</li>
+						</ul>
+						<div class="item-group">
+				<span id="login" ><a href="login.html">登录</a></span>|
+                <span id="register" ><a href="register.html">注册</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="backPic">
+			<div class="view_img">
+			</div>
+			<h3>专业全面的食物数据库</h3>
+			<div class="search">
+				<form class="form-search">
+					<input type="text" class="input-medium search-query" placeholder="搜索食物热量">
+					<button type="submit" class="btn">搜索</button>
+				</form>
+			</div>
+		</div>
+		
+		
+		<!--谷类-->
+		<div id="text1">
+<ul class="breadcrumb">
+  <li><a href="index.html">首页</a> <span class="divider">/</span></li>
+  <li ><a href="HealthFood.html">食物查询</a><span class="divider">/</span></li>
+   <li class="active" id="n7">谷薯芋、杂豆、主食</li>
+</ul>
+		<div id="Maintext">
+			<div class="box-hd">
+                            <h2 id="n6">谷薯芋、杂豆、主食</h2>
+                        </div>
+			<div class="box-bd">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <div class="img-wrap" id="img1">
+                                            <img id="img11" src="https://w2.dwstatic.com/yy/ojiastoreimage/94acedc6e3c283c42cadb778ce78bf3e.jpg?imageview/format/webp" alt="米饭">
+                                        </div>
+                                        <div class="cont">
+                                            <h3 id="n1">米饭</h3>
+                                            <p id="r1">热量：116 大卡（100克）</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                                                <li>
+                                    <a href="#" target="_blank">
+                                        <div class="img-wrap">
+                                            <img id="img12" src="https://w2.dwstatic.com/yy/ojiastoreimage/ca713e2c04cab007bca2b3a2f36fa848.jpg?imageview/format/webp" alt="玉米(鲜), 又叫苞谷、珍珠米、棒子、玉蜀黍、苞米、六谷">
+                                        </div>
+                                        <div class="cont">
+                                            <h3 id="n2">玉米(鲜), 又叫苞谷、珍珠米、棒子、玉蜀黍、苞米、六谷</h3>
+                                            <p id="r2">热量：106 大卡（100克可食部分）</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                                                <li>
+                                    <a href="#" target="_blank">
+                                        <div class="img-wrap">
+                                            <img id="img13" src="https://w2.dwstatic.com/yy/ojiastoreimage/09017c32ba6686b847c9efd4a4f8b05c.jpg?imageview/format/webp" alt="馒头">
+                                        </div>
+                                        <div class="cont">
+                                            <h3 id="n3">馒头</h3>
+                                            <p id="r3">热量：221 大卡（100克）</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                                                <li>
+                                    <a href="#" target="_blank">
+                                        <div class="img-wrap">
+                                            <img id="img14" src="https://w2.dwstatic.com/yy/ojiastoreimage/d7de2b2b099f0a3a2f07c2a47282bf5f.jpg?imageview/format/webp" alt="燕麦片">
+                                        </div>
+                                        <div class="cont">
+                                            <h3 id="n4">燕麦片</h3>
+                                            <p id="r4">热量：367 大卡（100克）</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                                                <li>
+                                    <a href="#" target="_blank">
+                                        <div class="img-wrap">
+                                            <img id="img15" src="https://w2.dwstatic.com/yy/ojiastoreimage/ef153703e989bc66bbff3b94bf7b77d4.jpg?imageview/format/webp" alt="面包">
+                                        </div>
+                                        <div class="cont">
+                                            <h3 id="n5">面包</h3>
+                                            <p id="r5">热量：312 大卡（100克）</p>
+                                        </div>
+                                    </a>
+                                </li>
+							</ul>
+		</div>
+		</div>
+</div>
+<div class="pagination  pagination-centered">
+  <ul>
+    <li class="disabled"><a href="#">Prev</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</div>
+<footer class="foot">
+		<div class="bottom">
+		@design for ZHAIJINGJING 16180600431
+	</div>
+	</footer>
+
+	</body>
+		
+</html>

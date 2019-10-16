@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/register.css" rel="stylesheet" />
+		 <script type="text/javascript">
+             window.onload=function(){
+                var oUser=document.getElementById('inputTel');
+                var oPwd=document.getElementById('inputPassword');
+                var oBtn=document.getElementById('btn');
+                oBtn.onclick=function(){
+                    var upData=null;
+                    var repeat=null;
+                    if (oUser.value&&oPwd.value) {
+                        if (window.localStorage.getItem('list')) {
+                            upData={'inputTel':oUser.value,'inputPassword':oPwd.value};
+                            var dataJson=window.localStorage.getItem('list');
+                            dataJson=eval('('+dataJson+')');
+                            for (var i=0;i<dataJson.length;i++) {
+                                if (dataJson[i].inputTel==upData.inputTel) {
+                                    alert('电话重复');
+                                    repeat=1;
+                                }
+                            }
+                            if (repeat==null) {
+                                alert('注册成功');
+                                dataJson.push(upData);
+                                dataJson=JSON.stringify(dataJson);
+                                window.localStorage.setItem('list',dataJson);
+                                console.log(window.localStorage.getItem('list'));
+                            }
+                        } else {
+                            upData={'inputTel':oUser.value,'inputPassword':oPwd.value};
+                            console.log(upData);
+                            var data=[];
+                            data.push(upData);
+                            data=JSON.stringify(data);
+                            window.localStorage.setItem('list',data);
+                            alert('注册成功');
+                            console.log(window.localStorage.getItem('list'));
+                        }
+                    }
+                }
+            }
+        </script>
+	</head>
+
+	<body>
+		<div class="navbar-wrapper">
+	<div class="container">
+		<div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+        <a class="brand" href="index.html"><img src="img/fitness.png" width="30px" height="30px"></a>
+        <ul class="nav">
+        <li ><a href="index.html">首页</a></li>
+        <li><a href="#">健身视频</a></li>
+         <li><a href="HealthFood.html">饮食查询</a></li>
+         <li><a href="#">健身工具</a></li>
+         <li><a href="#">训练计划</a></li>
+        </ul>
+        <div class="item-group">
+                <span id="login" ><a href="login.html">登录</a></span>|
+                <span id="register" ><a href="register.html" style="color: white;font-weight: bold;">注册</a></span>
+         </div>
+  </div>
+</div>
+	</div>
+	</div>
+	
+	
+		<div class="form1">
+			<div class="title">
+				<h3>注册</h3>
+			</div>
+			<form class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label" for="inputTel">电话</label>
+					<div class="controls">
+						<input type="text" id="inputTel" placeholder="请输入您的电话">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">密码</label>
+					<div class="controls">
+						<input type="password" id="inputPassword" placeholder="请输入您的密码">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">用户名</label>
+					<div class="controls">
+						<input type="text" id="inputUsername" placeholder="请输入您的用户名">
+						
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<button id="btn">注册</button><br />
+						<a href="login.html">已有账号？请登录</a>
+					</div>
+				</div>
+			</form>
+			
+			<div class="others">
+				<h5>使用第三方账号登录</h5>
+				<img src="img/QQ.png" />
+				<img src="img/微信.png" />
+				<img src="img/微博.png" />
+			</div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--画布背景-->
+		  <canvas id="change" width="1309" height="1000"></canvas>
+			
+        <script type="text/javascript">
+        var canvas=document.getElementById("change");
+        var context=canvas.getContext('2d');
+        for(var i=0;i<14;i++){
+            for(var j=0;j<14;j++){
+                context.fillStyle='rgb('+Math.floor(250-20*i)+','+Math.floor(250-20*j)+',300)';
+                context.fillRect(j*200,i*200,200,200);
+        }
+        }
+    </script>
+  
+	</body>
+
+</html>

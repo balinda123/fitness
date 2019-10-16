@@ -1,0 +1,74 @@
+body {
+    font-family: "Microsoft Yahei",Helvetica,Tahoma,"SimSun",sans-serif;
+}
+.navbar-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px;
+}
+
+
+.navbar-inner .item-group {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    text-align: center;
+    padding: 0 30px;
+    color: #d7d7d7;
+    font-size: 14px;
+}
+.navbar-inner .item-group span a{
+	margin-left: 8px;
+	margin-right: 8px;
+	color:#d7d7d7;
+}
+.form1{
+	box-shadow: 0 0 20px #999;
+    border: 1px solid #ccc;
+    background: antiquewhite;
+    width: 600px;
+    height: 500px;
+    margin: 150px auto;
+    position: relative;
+    z-index: 10;
+}
+.form1 .title{
+	position: absolute;
+	top: 0;
+	height: 70px;
+	width: 600px;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to bottom,#26262e 0,#46464c 100%);;
+}
+.form1 .form-horizontal{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+	
+}
+.others{
+	height: 100px;
+	width: 230px;
+	left: 190px;
+	position: absolute;
+	top: 350px;
+}
+.others h5{
+	text-align: center;
+}
+.others img{
+	width: 60px;
+	height: 60px;
+	margin: 0 5px;
+}
+#change{
+	z-index: -2;
+	position: absolute;
+	top: 0;
+}
